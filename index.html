@@ -320,7 +320,7 @@
                     Soft Pruning and Latent Space Dimensionality Reduction
                 </div>
                 <div style=" margin: 5pt; text-align: center">
-                    11/11/2023
+                    30/06/2024
                 </div>
                 <div style="margin: 5pt; text-align: justify">
                     Neural Network pruning is commonly used to reduce the size of a neural network, reducing the memory footprint, while maintaining an acceptable loss.  However, currently the only approach explored for removing a parameter from a neural network is to remove the parameter suddenly, irrespective of the pruning method, be it one-shot, iterative or sparsity-induced.  We hypothesize that this sudden removal will cause the loss of the information contained within the removed parameters, information which could be useful when retraining the neural network after pruning.  To resolve this, we propose <i>Soft Pruning</i>, a method of slowly decaying parameters out of a neural network.  We compare this to one-shot pruning on the vision-based tasks of classification, autoencoding, and latent space dimensionality reduction.  In every experiment, Soft Pruning is able to match or outperform one-shot pruning; in classification, Soft Pruning enables pruning to significantly greater extents than one-shot pruning, retaining over 60% accuracy where one-shot pruning becomes equivalent to random guessing.  In autoencoding, Soft Pruning is able to achieve up to 17% lower loss after pruning. Finally, applied to latent space dimensionality reduction, Soft Pruning is shown to achieve more than 60% lower loss compared to one-shot pruning.
