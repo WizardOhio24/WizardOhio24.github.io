@@ -81,11 +81,11 @@
     <div style="width:100%; padding: 30px 0px; margin: 0; display: inline-block;">
         <div style="width: 700px; display: flex; margin:auto; background-color: black; padding: 10px; color: white">
 
-            <a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="">Biography</a>
+            <!--<a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="">Biography</a>
+        -->
 
-
-            <a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="">Papers</a>
-            <a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="">CV</a>
+            <a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="#papers-section">Papers</a>
+            <a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="CV_Final1.pdf">CV</a>
             <a style="flex: 1 1 0; text-align: center; font-size: 16pt; text-decoration: underline; color: white" href="https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/computervisionandautonomoussystems/">CVAS</a>
         </div>
     </div>
@@ -291,8 +291,25 @@
                 </div>
 
                 <div style="display: flex; justify-content: space-between; margin: 10pt 5pt;vertical-align: top; align-items: flex-start; font-size: 14pt; font-style: oblique;">
-                <div style="text-align: left; display: flex; flex-grow: 1;" class="left-item">
+                    <div style="text-align: left;" class="left-item">
+                        <div>
+                            Student Member
+                        </div>
+                    </div>
+    
+                    <div style="text-align: right;align-items: flex-start">
+    
+                        <div>
+                            University of Glasgow Stratigic Advisory Board
+                        </div>
+                        <div style="font-weight: bold; padding: 4px; padding-right: 0px; font-size: 11pt">
+                            2024/2025
+                        </div>
+                    </div>
+                </div>
 
+                <div style="display: flex; justify-content: space-between; margin: 10pt 5pt;vertical-align: top; align-items: flex-start; font-size: 14pt; font-style: oblique;">
+                <div style="text-align: left; display: flex; flex-grow: 1;" class="left-item">
                     Convenor
                 </div>
 
@@ -310,23 +327,27 @@
 
         </div>
 
-        <div style="padding: 20px 0">
+        <div style="padding: 20px 0" id="papers-section">
             <!-- Papers -->
             <h2 style="font-weight: bold; width: 100%; text-align: center; text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 6px; text-decoration-skip-ink: none;">
                 Recent Papers
             </h2>
 
-            <div style="width: 80%; max-width: 900px; margin: auto;">
-                <div style=" margin: 5pt; text-align: center">
-                    Soft Pruning and Latent Space Dimensionality Reduction
+            <a href="Soft_Pruning___IJCNN__WCCI__2024_FINAL.pdf" style="color: #000000;">
+                <div style="width: 80%; max-width: 900px; margin: auto;">
+                    <div style=" margin: 5pt; text-align: center">
+                        Soft Pruning and Latent Space Dimensionality Reduction
+                    </div>
+                    <div style=" margin: 5pt; text-align: center">
+                        30/06/2024 | WCCI 2024 (IJCNN)
+                    </div>
+                    <div style="margin: 5pt; text-align: justify">
+                        Neural Network pruning is commonly used to reduce the size of a neural network, reducing the memory footprint, while maintaining an acceptable loss.  However, currently the only approach explored for removing a parameter from a neural network is to remove the parameter suddenly, irrespective of the pruning method, be it one-shot, iterative or sparsity-induced.  We hypothesize that this sudden removal will cause the loss of the information contained within the removed parameters, information which could be useful when retraining the neural network after pruning.  To resolve this, we propose <i>Soft Pruning</i>, a method of slowly decaying parameters out of a neural network.  We compare this to one-shot pruning on the vision-based tasks of classification, autoencoding, and latent space dimensionality reduction.  In every experiment, Soft Pruning is able to match or outperform one-shot pruning; in classification, Soft Pruning enables pruning to significantly greater extents than one-shot pruning, retaining over 60% accuracy where one-shot pruning becomes equivalent to random guessing.  In autoencoding, Soft Pruning is able to achieve up to 17% lower loss after pruning. Finally, applied to latent space dimensionality reduction, Soft Pruning is shown to achieve more than 60% lower loss compared to one-shot pruning.
+                    </div>
+
                 </div>
-                <div style=" margin: 5pt; text-align: center">
-                    30/06/2024
-                </div>
-                <div style="margin: 5pt; text-align: justify">
-                    Neural Network pruning is commonly used to reduce the size of a neural network, reducing the memory footprint, while maintaining an acceptable loss.  However, currently the only approach explored for removing a parameter from a neural network is to remove the parameter suddenly, irrespective of the pruning method, be it one-shot, iterative or sparsity-induced.  We hypothesize that this sudden removal will cause the loss of the information contained within the removed parameters, information which could be useful when retraining the neural network after pruning.  To resolve this, we propose <i>Soft Pruning</i>, a method of slowly decaying parameters out of a neural network.  We compare this to one-shot pruning on the vision-based tasks of classification, autoencoding, and latent space dimensionality reduction.  In every experiment, Soft Pruning is able to match or outperform one-shot pruning; in classification, Soft Pruning enables pruning to significantly greater extents than one-shot pruning, retaining over 60% accuracy where one-shot pruning becomes equivalent to random guessing.  In autoencoding, Soft Pruning is able to achieve up to 17% lower loss after pruning. Finally, applied to latent space dimensionality reduction, Soft Pruning is shown to achieve more than 60% lower loss compared to one-shot pruning.
-                </div>
-            </div>
+            </a>
+
         </div>
 
         <div style="padding: 20px 0">
@@ -336,7 +357,8 @@
             </h2>
 
             <div style="max-width: 900px; text-align: center; margin: auto; padding-top: 0px; font-size: 14pt; font-style: oblique;">
-                <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4012" style="text-decoration: underline;"><div style="padding: 10px 0px; padding-top: 0;"> Network Systems (H) 2022/2023 </div></a>
+                <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4073" style="text-decoration: underline;"><div style="padding: 10px 0px; padding-top: 0;"> Data Fundumentals (H) 2024/2025 </div></a>
+                <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4012" style="text-decoration: underline;"><div style="padding: 10px 0px;"> Network Systems (H) 2022/2023 </div></a>
                 <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4004" style="text-decoration: underline;">
                     <div style="padding: 10px 0px;"> Artificial Intelligence (H) 2022/2023 </div>
                 </a>
@@ -347,10 +369,28 @@
         <div style="padding: 20px 0">
             <!-- Past projects -->
             <h2 style="font-weight: bold; width: 100%; text-align: center; text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 6px; text-decoration-skip-ink: none;">
-                Legacy
+                Volunteering
             </h2>
 
             <div style="max-width: 900px; text-align: center; margin: auto; padding-top: 10px;">
+                <div style="display: flex; justify-content: space-between; margin: 10pt 5pt;vertical-align: top; align-items: flex-start; font-size: 14pt; font-style: oblique;">
+                    <div style="text-align: left;" class="left-item">
+                        <div>
+                            Treasurer
+                        </div>
+                    </div>
+
+                    <div style="text-align: right;align-items: flex-start">
+
+                        <div>
+                            Glasgow Polytechnic Chess Club
+                        </div>
+                        <div style="font-weight: bold; padding: 4px; padding-right: 0px; font-size: 11pt">
+                            2024 - Present
+                        </div>
+                    </div>
+                </div>
+
                 <div style="display: flex; justify-content: space-between; margin: 10pt 5pt;vertical-align: top; align-items: flex-start; font-size: 14pt; font-style: oblique;">
                     <div style="text-align: left;" class="left-item">
                         <div>
